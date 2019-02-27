@@ -4,3 +4,13 @@ body {
     margin: 0;
 }
 
+#logo svg {
+    height: 25px;
+}
+
+#huddle-text {
+/*     height: 80%;
+    width: auto; */
+    fill: #f75050;
+}
+

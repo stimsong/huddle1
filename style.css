@@ -8,7 +8,62 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 25px 25px 50px;
+}
+
+.logo img {
+    height: 20px;
+    width: auto;
+    padding-top: 3px;
+}
+
+.submit-button {
+    float: right;
+}
+
+#try-it-button {
+    background-color: #fff;
+    font-size: .7em;
+    color: hsl(322, 100%, 66%);
+    /* text-shadow: 0 0 0 1px hsla(322, 100%, 66%, 0.3);       Use for hover */
+    padding: 5px 17px;
+    border: solid 1px;
+    border-radius: 4px;
+    border-color: hsl(322, 100%, 66%);
+    box-shadow: 0 0 0 2px hsla(322, 100%, 66%, 0.1);
+    cursor: pointer;
+}
+
+main {
+    margin: 40px 25px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: .8em;
+}
+
+#info_1 {
+    padding: 0 20px 50px;
+}
+
+#screen-mockups img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
 }
 
 /* .logo {
@@ -16,19 +71,12 @@ header {
     width: auto;
 } */
 
-.logo img {
-    height: 25px;
-    width: auto;
-}
 
 /* #logo-size {
     height: 20px;
     width: auto;
 } */
 
-#try-it-button {
-    float: right;
-}
 
 /* img {
     width: 100%;

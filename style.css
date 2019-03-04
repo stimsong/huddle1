@@ -4,13 +4,36 @@ body {
     margin: 0;
 }
 
-#logo svg {
-    height: 25px;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-#huddle-text {
-/*     height: 80%;
-    width: auto; */
-    fill: #f75050;
+/* .logo {
+    height: 25px;
+    width: auto;
+} */
+
+.logo img {
+    height: 25px;
+    width: auto;
 }
+
+/* #logo-size {
+    height: 20px;
+    width: auto;
+} */
+
+#try-it-button {
+    float: right;
+}
+
+/* img {
+    width: 100%;
+    height: auto;
+} */
+
+
 

@@ -115,6 +115,9 @@ p {
 }
 
 #footer-1 {
+    font-family: 'Open Sans', sans-serif;
+    /* font-size: .9em; */
+    /* display: flex; */
     padding: 80px 25px;
     color: #fff;
     background-color: hsl(192, 100%, 9%); 
@@ -133,5 +136,53 @@ p {
     width: auto;
     padding: 15px 0;
 }
-    
 
+#footer-1 form {
+    padding-bottom: 20px;
+    text-align: start
+}
+
+#email-input {
+    border: none;
+    padding: 9px 40px 9px 10px;
+    vertical-align: middle;
+}
+
+#arrow-button {
+    margin-left: -4px;
+    padding: 11px;
+    background-color: hsl(322, 100%, 66%);
+    vertical-align: middle;
+}
+
+#social-icons {
+    padding: 20px 0;
+}
+
+#social-icons ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-start;
+ }
+
+#social-icons li {
+    height: 30px;
+    width: 30px;
+    padding-right: 15px;
+    fill: #fff;
+}
+
+#links-1 {
+    padding: 10px 0;
+}
+ 
+#links-2 {
+    padding: 10px 0;
+}
+
+/* #sub-input-field {
+    padding-right: 20px;
+} */

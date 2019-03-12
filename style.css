@@ -74,6 +74,7 @@ p {
 }
 
 #info_1 p {
+    color: hsl(208, 11%, 55%);
     text-align: center;
 }
 
@@ -83,6 +84,7 @@ p {
 }
 
 #info_2 p {
+    color: hsl(208, 11%, 55%);
     padding-bottom: 25px;
 }
 
@@ -116,9 +118,8 @@ p {
 
 #footer-1 {
     font-family: 'Open Sans', sans-serif;
-    /* font-size: .9em; */
-    /* display: flex; */
-    padding: 80px 25px;
+    font-size: 1em;
+    padding: 80px 25px 5px;
     color: #fff;
     background-color: hsl(192, 100%, 9%); 
 }
@@ -131,6 +132,10 @@ p {
     text-decoration: none;
 }
 
+#footer-1 p {
+    font-size: 1em;
+}
+
 .footer-1-svg {
     height: 30px;
     width: auto;
@@ -139,7 +144,23 @@ p {
 
 #footer-1 form {
     padding-bottom: 20px;
-    text-align: start
+    text-align: start;
+    text-transform: uppercase;
+}
+
+::placeholder {
+    color: lightgrey;
+}
+
+#footer-2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8em;
+    color: #cbd9e2;
+    padding: 55px 25px 10px;
+    text-align: center;
+    background-color: hsl(192, 100%, 9%); 
+    background-image: url(images/bg-footer-mobile.png);
+    background-size: 100% 100%;
 }
 
 #email-input {

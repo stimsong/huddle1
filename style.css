@@ -34,16 +34,15 @@ header {
     cursor: pointer;
 }
 
-#get-started-button {
+.get-started-button {
     background-color: hsl(322, 100%, 66%);
     font-size: .7em;
     color: #fff;
-    /* text-shadow: 0 0 0 1px hsla(322, 100%, 66%, 0.3);       Use for hover */
-    padding: 10px 30px;
+    padding: 10px 50px;
     border: none;
     /* border: solid 1px; */
     border-radius: 4px;
-    border-color: hsl(322, 100%, 66%);
+    /* border-color: hsl(322, 100%, 66%); */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* box-shadow: 5px 5px 2px #d3d3d3;  */
     cursor: pointer; 
@@ -204,6 +203,67 @@ p {
     padding: 10px 0;
 }
 
-/* #sub-input-field {
-    padding-right: 20px;
-} */
+@media only screen and (max-width: 767px) {
+    /* Hide 2nd button until desktop width */
+    div#upper_get_started_button {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop */
+    h1 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+
+    #info_1 {
+        padding: 0 10%;
+    }
+
+    #info_1 p {
+        padding: 0 10% 20px;
+    }
+
+    #screen-mockups img {
+        width: 75%;
+    }
+
+    #upper_get_started_button {
+        text-align: center;
+        padding: 0 0 10px;
+    }
+
+    .get-started-button {
+        font-size: .9em;
+    }
+
+    #info_2_flex {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    #info_2_flex > div {
+        width:50%;
+    }
+
+    #info_2 {
+        padding: 0 25px;
+        background-color: #fff;
+    }
+
+    #your-users {
+        background-color: #fff;
+        padding: 0;
+    }
+
+    #your-users img {
+        padding: 0 10px;
+    }
+
+
+}

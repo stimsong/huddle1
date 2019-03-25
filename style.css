@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/*   TODO:
+        - add gradient to Get Started buttons
+        - tidy up code
+*/
+
 body {
     margin: 0;
 }
@@ -25,26 +30,25 @@ header {
     background-color: #fff;
     font-size: .7em;
     color: hsl(322, 100%, 66%);
-    /* text-shadow: 0 0 0 1px hsla(322, 100%, 66%, 0.3);       Use for hover */
+    text-shadow: 0 0 3px hsla(322, 100%, 66%, 0.1);
     padding: 5px 17px;
     border: solid 1px;
     border-radius: 4px;
     border-color: hsl(322, 100%, 66%);
-    box-shadow: 0 0 0 2px hsla(322, 100%, 66%, 0.1);
+    box-shadow: 0 0 0 3px hsla(322, 100%, 66%, 0.1);
     cursor: pointer;
 }
 
-#get-started-button {
+.get-started-button {
     background-color: hsl(322, 100%, 66%);
     font-size: .7em;
     color: #fff;
-    /* text-shadow: 0 0 0 1px hsla(322, 100%, 66%, 0.3);       Use for hover */
-    padding: 10px 30px;
+    padding: 20px 70px;
     border: none;
     /* border: solid 1px; */
-    border-radius: 4px;
-    border-color: hsl(322, 100%, 66%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    /* border-color: hsl(322, 100%, 66%); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     /* box-shadow: 5px 5px 2px #d3d3d3;  */
     cursor: pointer; 
 }
@@ -204,6 +208,168 @@ p {
     padding: 10px 0;
 }
 
-/* #sub-input-field {
-    padding-right: 20px;
-} */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (max-width: 767px) {
+    /* Hide 2nd button until desktop width */
+    div#upper_get_started_button {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /*     **********     For desktop     **********     */
+
+    header {
+        padding: 50px 50px 100px;
+    }
+
+    h1 {
+        font-size: 2.4em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 1.2em;
+    }
+
+    .logo img {
+        height: 30px;
+        width: auto;
+        padding-top: 3px;
+    }
+
+    #try-it-button {
+        font-size: .9em;
+        padding: 7px 20px;
+    }
+
+    #info_1 {
+        padding: 0 10%;
+    }
+
+    #info_1 p {
+        padding: 0 17% 20px;
+    }
+
+    #screen-mockups {
+        padding: 20px 0;
+    }
+
+    #screen-mockups img {
+        width: 75%;
+    }
+
+    #upper_get_started_button {
+        text-align: center;
+        padding: 0 0 10px;
+    }
+
+    .get-started-button {
+        font-size: 1em;
+        padding: 20px 80px;
+    }
+
+    #info_2_flex {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 90px 30px 0;
+    }
+
+/*     #info_2_flex > div {
+        width:50%;
+    } */
+
+    #info_2 {
+        width: 45%;
+        padding: 0 25px;
+        background-color: #fff;
+    }
+
+    #info_2 p {
+        font-size: 1em;
+    }
+
+    #your-users {
+        width: 55%;
+        background-color: #fff;
+        padding: 0;
+    }
+
+    #your-users img {
+        padding: 0 10px;
+    }
+
+    #footer_flex {
+        display: flex;
+        box-sizing: border-box;
+        padding: 0 25px;
+        align-items: center;
+    }
+
+    #footer-1 {
+        font-size: .9em;
+        color: hsl(208, 11%, 55%);
+    }
+
+    #footer-1 a {
+        color: hsl(208, 11%, 55%);
+    }
+
+    #b1-form {
+        order: 4;
+        width: 30%;
+    }
+
+    #b2-icons_info {
+        width: 25%;
+        padding: 0 50px;
+    }
+
+    #b3-links1 {
+        width: 20%;
+        /* text-align: center; */
+    }
+
+    #b3-links1 p {
+        padding-left: 40px;
+    }
+
+/*     #links1 {
+        padding: 10px;
+    } */
+
+    #b4-links2 {
+        width: 20%;
+        /* text-align: center; */
+    }
+
+    #b4-links2 p {
+        padding-left: 20px;
+    }
+
+    #email-input {
+        padding: 10px 30px 10px 10px;
+    }
+
+    #arrow-button {
+        padding: 12px;
+    }
+
+    #footer-2 {
+        background-image: url(images/bg-footer-desktop.png);
+    }
+
+}
